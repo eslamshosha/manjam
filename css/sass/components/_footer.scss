@@ -422,8 +422,8 @@ select {
     padding: 70px 0 40px;
     margin-top: 50px;
   }
-  footer::after {
-    display: none;
+  .footer-head{
+    font-size: 24px;
   }
   .footer-cont {
     grid-template-columns: repeat(1, 1fr);
