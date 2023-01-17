@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>manjam</title>
+    <link rel="icon" href="images/fav.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- <link href="css/bootstrap.rtl.min.css" rel="stylesheet" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.3.3/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <!-- preloader -->
+    <div class="preloader">
+      <div class="progress">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+    <!-- preloader -->
+    <!-- header section -->
+    <header class="header">
+      <div class="top-header">
+        <div class="container">
+          <div class="nav-header">
+            <figure class="img-logo">
+              <a href="index-en.html"
+                ><img src="images/logo.png" class="img-fluid" alt="img-logo"
+              /></a>
+            </figure>
+            <div class="navgition">
+              <div class="nav-head">
+                <a href="#" class="login-ancor">
+                  <i class="las la-user"></i>
+                  <span>login</span>
+                </a>
+              </div>
+              <ul class="big-menu list-unstyled">
+                <li>
+                  <a href="#" role="button" data-href="#courses"> last workshops</a>
+                </li>
+                <li>
+                  <a href="#" role="button" data-href="#influencer">
+                    influencers</a
+                  >
+                </li>
+                <li>
+                  <a href="#" role="button" data-href="#blog"> blog </a>
+                </li>
+                <li>
+                  <a href="#" role="button" data-href="#footer"> contact us</a>
+                </li>
+                <li>
+                  <a href="index.html"> العربية</a>
+                </li>
+              </ul>
+            </div>
+            <div class="show-icons">
+              <a href="#" class="login-ancor hide-sm">
+                <i class="las la-user"></i>
+                <span>login</span>
+              </a>
+              <a href="form.html" class="contact-link" rel="nofollow">
+                Join us</a
+              >
+              <button class="menu-bars fixall" id="menu-id">
+                <span class="hamburger-lines">
+                  <span class="line line1"></span>
+                  <span class="line line2"></span>
+                  <span class="line line3"></span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header section     -->
+    <!-- main slider -->
+    <main class="main">
+      <div class="container">
+        <div class="main-cont">
+          <div class="main-info">
+            <h1 class="main-title wow fadeInDown" wow-data-delay="5s">
+              Minajm platform enables influencers to provide their services within the Kingdom with ease
+            </h1>
+            <p class="main-pargh wow bounceInUp center" wow-data-delay="5s">
+              If you offer training courses, workshops, recorded sessions or downloadable references,
+              Mine platform made everything easier for you
+            </p>
+            <div class="btn-cont">
+              <a href="form.html" class="first-btn" rel="nofollow">
+                Join us now</a
+              >
+              <a href="form.html" class="second-btn" rel="nofollow">
+                For more talk to us</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-background">
+        <figure>
+          <img src="images/main/01.png" alt="main-background" />
+        </figure>
+      </div>
+      <button
+        class="header-scroll-down-butt"
+        id="scroll-to-about-section"
+      ></button>
+    </main>
+    <!-- main slider -->
+    <!-- courses section -->
+    <section class="courses-section" id="courses">
+      <div class="container">
+        <h2 class="section-head wow fadeInDown" wow-data-delay="5s">
+          Latest courses and workshops added
+        </h2>
+        <div class="courses-container" id="mix-container">
+          <div class="mix-btn-cont">
+            <button class="mix-btn" type="button" data-filter="all">
+              all
+            </button>
+            <button class="mix-btn" type="button" data-filter=".category-a">
+              Marketing
+            </button>
+            <button class="mix-btn" type="button" data-filter=".category-b">
+               design
+            </button>
+            <button class="mix-btn" type="button" data-filter=".category-c">
+              programming
+            </button>
+            <button class="mix-btn" type="button" data-filter=".category-d">
+              Project management
+            </button>
+            <button class="mix-btn" type="button" data-filter=".category-e">
+              Human Development
+            </button>
+            <button class="mix-btn" type="button" data-filter=".category-f">
+              Electronic trade
+            </button>
+          </div>
+          <div class="mix category-a" data-order="1">
+            <div class="product-slider product-slider-1">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="product">
+                      <div class="product-hover">
+                        <a href="#!" class="product-img">
+                          <img src="images/courses/01.jpg" class="img-fluid" />
+                        </a>
+                      </div>
+                      <div class="product-content">
+                        <a class="product-category" href="#!"> Workshop</a>
+                        <p class="product-title">
+                          How to collect and analyze customer data to increase sales
+                          (practical application on store project data)
+                        </p>
+                        <a href="#" class="product-link"> subscribe now</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product">
+                      <div class="product-hover">
+                        <a href="#!" class="product-img">
+                          <img src="images/courses/02.jpg" class="img-fluid" />
+                        </a>
+                      </div>
+                      <div class="product-content">
+                        <a class="product-category" href="#!"> Training course</a>
+                        <p class="product-title">
+                          Managing crises and problems and making effective decisions at home
+                          or work
+                        </p>
+                        <a href="#" class="product-link"> subscribe now</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product">
+                      <div class="product-hover">
+                        <a href="#!" class="product-img">
+                          <img src="images/courses/03.jpg" class="img-fluid" />
+                        </a>
+                      </div>
+                      <div class="product-content">
+                        <a class="product-category" href="#!"> recorded session</a>
+                        <p class="product-title">
+                          Developing the user experience for an e-commerce application (app
+                          My work on a client project)
+                        </p>
+                        <a href="#" class="product-link"> subscribe now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-btn-prev swiper-btn">
+                <i class="las la-arrow-right"></i>
+              </div>
+              <div class="swiper-btn-next swiper-btn">
+                <i class="las la-arrow-left"></i>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="mix category-b" data-order="2"></div>
+          <div class="mix category-b category-c" data-order="3"></div>
+          <div class="mix category-a category-d" data-order="4"></div>
+        </div>
+      </div>
+    </section>
+    <!-- courses section -->
+    <!-- influencer-section -->
+    <section
+      class="influencer"
+      id="influencer"
+      style="background-image: url('images/bg.jpg')"
+    >
+      <div class="container">
+        <div class="influencer-container">
+          <h2 class="influencer-head wow fadeInDown" wow-data-delay="5s">
+            Join a large number of influencers in various fields from all over the country
+            Arabi
+          </h2>
+          <a href="#" class="influencer-link" rel="nofollow">
+            Join us now
+          </a>
+          <div class="influencer-slider">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="influencer-ancor">
+                    <figure class="influencer-figure">
+                      <img
+                        src="images/influencer/01.png"
+                        alt="influencer-img"
+                        class="influencer-img img-fluid"
+                      />
+                    </figure>
+                    <span>Moaz Al-Qahtani</span>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="influencer-ancor">
+                    <figure class="influencer-figure">
+                      <img
+                        src="images/influencer/02.png"
+                        alt="influencer-img"
+                        class="influencer-img img-fluid"
+                      />
+                    </figure>
+                    <span>Moaz Al-Qahtani</span>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="influencer-ancor">
+                    <figure class="influencer-figure">
+                      <img
+                        src="images/influencer/03.png"
+                        alt="influencer-img"
+                        class="influencer-img img-fluid"
+                      />
+                    </figure>
+                    <span>Moaz Al-Qahtani</span>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="influencer-ancor">
+                    <figure class="influencer-figure">
+                      <img
+                        src="images/influencer/04.png"
+                        alt="influencer-img"
+                        class="influencer-img img-fluid"
+                      />
+                    </figure>
+                    <span>Moaz Al-Qahtani</span>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="influencer-ancor">
+                    <figure class="influencer-figure">
+                      <img
+                        src="images/influencer/05.png"
+                        alt="influencer-img"
+                        class="influencer-img img-fluid"
+                      />
+                    </figure>
+                    <span>Moaz Al-Qahtani</span>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="influencer-ancor">
+                    <figure class="influencer-figure">
+                      <img
+                        src="images/influencer/06.png"
+                        alt="influencer-img"
+                        class="influencer-img img-fluid"
+                      />
+                    </figure>
+                    <span>Moaz Al-Qahtani</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-btn-prev swiper-btn">
+              <i class="las la-long-arrow-alt-right"></i>
+            </div>
+            <div class="swiper-btn-next swiper-btn">
+              <i class="las la-long-arrow-alt-left"></i>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- influencer-section -->
+    <!-- blog slider -->
+    <section class="blog-section" id="blog">
+      <div class="container">
+        <div class="blog-title wow fadeInDown" wow-data-delay="5s">
+          <h3 class="blog-head">blog</h3>
+        </div>
+        <div class="blog-slider">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="blog">
+                  <figure class="blog-figure">
+                    <img
+                      class="blog-img"
+                      alt="image1"
+                      src="images/blog/01.jpg"
+                      class="img-fluid"
+                    />
+                  </figure>
+                  <div class="blog-content">
+                    <a class="blog-link" href="#"
+                      >A proven fact from a long time ago is that readable content
+                      for a page
+                    </a>
+                    <p class="blog-pargh">
+                      It will distract the reader from focusing on the external appearance of the text or the form of placement
+                      paragraphs on the page that
+                    </p>
+                    <a class="blog-read" href="#"> Read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="blog">
+                  <figure class="blog-figure">
+                    <img
+                      class="blog-img"
+                      alt="image1"
+                      src="images/blog/02.jpg"
+                      class="img-fluid"
+                    />
+                  </figure>
+                  <div class="blog-content">
+                    <a class="blog-link" href="#"
+                      >A proven fact from a long time ago is that readable content
+                      for a page
+                    </a>
+                    <p class="blog-pargh">
+                      It will distract the reader from focusing on the external appearance of the text or the form of placement
+                      paragraphs on the page that
+                    </p>
+                    <a class="blog-read" href="#"> Read more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="blog">
+                  <figure class="blog-figure">
+                    <img
+                      class="blog-img"
+                      alt="image1"
+                      src="images/blog/03.jpg"
+                      class="img-fluid"
+                    />
+                  </figure>
+                  <div class="blog-content">
+                    <a class="blog-link" href="#"
+                      >A proven fact from a long time ago is that readable content
+                      for a page
+                    </a>
+                    <p class="blog-pargh">
+                      It will distract the reader from focusing on the external appearance of the text or the form of placement
+                      paragraphs on the page that
+                    </p>
+                    <a class="blog-read" href="#"> Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-btn-prev swiper-btn">
+            <i class="las la-arrow-right"></i>
+          </div>
+          <div class="swiper-btn-next swiper-btn">
+            <i class="las la-arrow-left"></i>
+          </div>
+        </div>
+        <a href="#" class="blog-ancor"> Show more</a>
+      </div>
+    </section>
+    <!-- blog slider -->
+    <!-- footer section -->
+    <footer id="footer">
+      <div class="container">
+        <h2 class="footer-head wow fadeInDown" wow-data-delay="5s">
+          Have an inquiry?<span>Contact us now</span>
+        </h2>
+        <div class="footer-cont">
+          <div class="footer-contact">
+            <div class="contact-box">
+              <h3 class="contact-head">
+                <i class="las la-map-marker-alt"></i>
+                <span>Address</span>
+              </h3>
+              <p class="contact-pargh">
+                43 Salah El Din Al Ayoubi St., next to Al Ahly Bank, Riyadh - Kingdom
+                Saudi Arab
+              </p>
+            </div>
+            <div class="contact-box">
+              <h3 class="contact-head">
+                <i class="las la-mobile"></i>
+                <span>phone</span>
+              </h3>
+              <a href="tel:+966 54 381 2067" class="contact-ancor">
+                +966543812067
+              </a>
+            </div>
+            <div class="contact-box">
+              <h3 class="contact-head">
+                <i class="las la-envelope"></i>
+                <span> E-mail</span>
+              </h3>
+              <a href="mailto:info@stechme.com" class="contact-ancor">
+                info@stechme.com
+              </a>
+            </div>
+            <div class="social">
+              <a href="#" class="social-link">
+                <i class="lab la-instagram"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="lab la-telegram-plane"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="lab la-twitter"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer-form-cont">
+            <div class="form-head">
+              <h2>
+                Send us your inquiry or suggestion now and we will respond to you as soon as possible
+                Maybe
+              </h2>
+            </div>
+            <form action="" class="footer-form">
+              <div class="form-group input-row">
+                <input
+                  type="text"
+                  class="form-input"
+                  name=""
+                  placeholder="full name*"
+                />
+              </div>
+              <div class="form-group input-row">
+                <input
+                  type="tel"
+                  class="form-input"
+                  name=""
+                  placeholder="Mobile number*"
+                />
+              </div>
+              <div class="form-group input-row">
+                <select class="new-address-select">
+                  <option disabled selected hidden>City</option>
+                  <option>Saudi Arabia</option>
+                  <option>The United Arab Emirates</option>
+                  <option>Bahrain</option>
+                  <option>kuwait</option>
+                  <option>Sultanate of Oman</option>
+                  <option>qatar</option>
+                </select>
+              </div>
+              <div class="form-group input-row">
+                <input
+                  type="email"
+                  class="form-input"
+                  name=""
+                  placeholder="email"
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-input"
+                  name=""
+                  placeholder="Message text*"
+                ></textarea>
+              </div>
+              <div class="form-btn-cont">
+                <button class="form-btn" type="submit">send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <p class="copy-right">© Mine 2022. Sponsored by Shop, All Rights Reserved</p>
+      </div>
+    </footer>
+    <!-- footer section -->
+    <!-- arrow to top -->
+    <button class="arrow-top">
+      <i class="las la-arrow-up"></i>
+    </button>
+    <!-- arrow to top -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.3.3/swiper-bundle.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

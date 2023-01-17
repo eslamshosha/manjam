@@ -1,0 +1,129 @@
+.vision{
+    padding: 90px 0;
+    overflow: hidden;
+    // background-image:  url(../images/leaf\ bg.png) , linear-gradient(to right, #519356 79%, #fff 0);
+    background-position:-152% 149%;
+    background-repeat: no-repeat;
+ 
+    .video{
+        position: relative;
+        a{
+            position: relative;
+        }
+    }
+     .video-img{
+        object-fit: cover;
+        width: 100%;
+        height: 368px;
+    }
+}
+html[dir="ltr"]{
+    .vision-desc-parent{
+        transform: translateX(30px);
+    }
+    .vision .container{
+        background-position: 600% 149%;
+    }
+    .vision {
+    //    background-image:  url(../images/leaf\ bg.png) , linear-gradient(to left, #519356 79%, #fff 0);
+       background-position: 239% 164%;
+    }
+}
+.video-overlay{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    background-color: rgba($color: #000000, $alpha: .2);
+}
+
+.vision-desc-parent{
+    transform: translateX(-30px);
+    .vision-desc-child1 , .vision-desc-child2{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+   .vision-desc-child1{
+    margin-bottom: 30px;
+   }
+    img{
+        margin-inline-end: 20px;
+    }
+    h2{
+        font-size: 24px;
+        color: #ffffff;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    p{
+        font-size: 18px;
+        line-height: 32px;
+        color: #ffffff;
+    }
+  
+}
+.vision-desc{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.vision-desc-parent-col{
+    display: flex;
+    align-items: center;
+}
+
+.youtube{
+    position: absolute;
+    width: 75px;
+    max-width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+
+@include max-768 {
+    .vision{
+        background-image: none !important;
+        background-color: $main-color !important;
+    }
+    .vision-desc-parent{
+        transform: translateX(0) !important;
+    }
+    .vision-desc-parent .vision-desc-child1{
+        margin-bottom: 15px;
+    }
+    .vision .video{
+        inset-inline-end: 0;
+    }
+    .vision .video-img{
+        width: 100%;
+        height: auto;
+    }
+    .youtube{
+        width: 35px;
+    }
+    .vision-desc-parent{
+        width: 100%;
+        margin-inline-start: 0;
+    }
+    .vision-desc-parent-col{
+        margin-top: 30px;
+    }
+    .vision-desc-parent p{
+        font-size: 16px ; 
+        line-height: 1.7;
+    }
+    .vision-desc-parent h2{
+        font-size: 20px;
+    }
+    .vision-desc-parent img {
+        width: 30px;
+    }
+
+}
+
+
+
+

@@ -1,0 +1,221 @@
+/*                              courses-section                    */
+.courses-section {
+  position: relative;
+  margin-top: 145px;
+  overflow: hidden;
+}
+.section-head {
+  text-align: start;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 30px;
+  color: $main-color;
+  margin-bottom: 25px;
+}
+.mix-btn-cont {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 25px;
+}
+.mix-btn {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: unset !important;
+  outline: none !important;
+  background-color: #e8e8f2;
+  height: 40px;
+  border-radius: 20px;
+  margin: 0;
+  padding: 0 15px;
+  margin: 0;
+  margin-inline-end: 10px;
+  color: $main-color;
+  outline-offset: 0;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  text-transform: capitalize;
+}
+.mix-btn:hover,
+.mixitup-control-active,
+.mix-btn:focus {
+  border: none;
+  color: $white-color;
+  background-color: $main-color;
+}
+.product-slider {
+  position: relative;
+  width: 100%;
+}
+
+.product-img {
+  @include flexx;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  img {
+    width: 100%;
+    @include tr;
+  }
+  &:hover img {
+    transform: scale(1.05);
+  }
+}
+.product-content {
+  padding: 20px 0;
+  background-color: #fff;
+}
+.product-category {
+  display: block;
+  color: $hover-color;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  transition: all 0.3s ease-in-out;
+  text-align: start;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  &:hover {
+    color: $main-color;
+  }
+}
+.product-title {
+  display: block;
+  color: $main-color;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: start;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  min-height: 85px;
+  -webkit-box-orient: vertical;
+}
+.product-link {
+  width: 139px;
+  height: 42px;
+  border-radius: 25px;
+  @include flexx;
+  font-weight: 700;
+  font-size: 16px;
+  color: $white-color;
+  background-image: linear-gradient(
+    to right,
+    rgb(169, 70, 179),
+    rgb(103, 111, 241),
+    rgb(103, 111, 241),
+    rgb(169, 70, 179)
+  );
+  margin-inline-end: 10px;
+  background-size: 300% 100%;
+  text-decoration: none;
+  @include tr;
+  &:hover {
+    text-decoration: none;
+    color: $white-color;
+    background-position: 100% 0;
+  }
+}
+.product-slider .swiper-btn {
+  position: absolute;
+  z-index: 1;
+  top: 117px;
+  display: none;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.302);
+  border-radius: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: $main-color;
+  }
+}
+
+@media (min-width: 1320px) {
+  .product-slider .swiper-btn {
+    @include flexx;
+  }
+}
+.product-slider .swiper-btn i {
+  z-index: 2;
+}
+.product-slider .swiper-btn.swiper-btn-next {
+  left: -57px;
+}
+
+.product-slider .swiper-btn.swiper-btn-prev {
+  right: -57px;
+}
+
+.product-slider .swiper-pagination {
+  position: relative;
+  width: 100%;
+  bottom: auto;
+  display: none;
+  margin-top: 15px;
+}
+
+@media (max-width: 1320px) {
+  .product-slider .swiper-pagination {
+    @include flexx;
+  }
+}
+
+.product-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background-color: rgb(18, 17, 18);
+  opacity: 0.3;
+  margin: 0 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  outline: none !important;
+  border-radius: 50%;
+  &:hover {
+    background-color: $main-color;
+  }
+  &.swiper-pagination-bullet-active {
+    background-color: $main-color;
+    opacity: 1;
+  }
+}
+@include max-991 {
+  .courses-section {
+    margin-top: 40px;
+  }
+  .mix-btn-cont {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding-bottom: 10px;
+    justify-content: flex-start;
+  }
+  .mix-btn {
+    white-space: nowrap;
+    font-size: 14px;
+    margin-inline-end: 15px;
+  }
+  .section-head {
+    font-size: 24px;
+  }
+  .product-category {
+    font-size: 12px;
+  }
+  .product-title {
+    font-size: 14px;
+    -webkit-line-clamp: 2;
+    min-height: 42px;
+  }
+  .product-link {
+    width: 120px;
+    height: 35px;
+    font-size: 14px;
+  }
+}
+/*                              courses-section                    */
