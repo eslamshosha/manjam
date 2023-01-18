@@ -166,7 +166,7 @@ $(document).ready(function () {
       {
         scrollTop: 0,
       },
-      1500
+      1500,"swing"
     );
   });
   $(this).scrollTop() >= 500
