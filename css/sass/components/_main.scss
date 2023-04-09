@@ -46,6 +46,8 @@
   font-weight: 700;
   font-size: 16px;
   color: $white-color;
+  border: none !important;
+  outline: none !important;
   background-image: linear-gradient(
     to right,
     rgb(169, 70, 179),
@@ -67,6 +69,8 @@
   width: 160px;
   height: 50px;
   border-radius: 25px;
+  border: none !important;
+  outline: none !important;
   @include flexx;
   font-weight: 700;
   font-size: 16px;
@@ -131,6 +135,7 @@
   width: 22px;
   height: 45px;
   border-radius: 11px;
+  opacity: 0.5;
   border: 2px solid #fff;
   position: absolute;
   left: 50%;

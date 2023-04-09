@@ -1,0 +1,85 @@
+/*                              form-section                    */
+.form-section {
+  margin-top: 100px;
+}
+.create-form {
+  width: 504px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.create-form .form-head {
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  color: $main-color;
+  margin-bottom: 30px;
+}
+.create-form .form-group {
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: start;
+}
+.main-label {
+  font-weight: 400;
+  font-size: 14px;
+  color: $main-color;
+  text-align: start;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  -webkit-margin-start: 15px;
+  margin-inline-start: 15px;
+}
+.main-label.required::after {
+  content: "*";
+  font-size: 16px;
+  color: #ff0000;
+}
+.create-form .form-input {
+  background-color: #f7f7f7;
+  border: 2px solid #f7f7f7;
+  height: 45px;
+  width: 100%;
+  padding: 0 25px;
+  border-radius: 25px;
+  text-align: start;
+  color: #808080;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+  transition: all 0.3s ease-in-out;
+  caret-color: $main-color;
+}
+.form-input[type="email"],
+.form-input[type="tel"] {
+  text-align: left;
+}
+.form-input[type="email"]::placeholder,
+.form-input[type="tel"]::placeholder {
+  text-align: start;
+}
+.create-form .form-input::placeholder {
+  color: #808080;
+}
+.create-form textarea.form-input {
+  height: 100px;
+  resize: none;
+  padding: 15px 25px;
+}
+.create-form .form-input:focus {
+  border-color: $hover-color;
+  outline: 0;
+}
+.create-form .form-btn-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .form-section {
+    margin-top: 50px;
+  }
+}
+
+/*                              form-section                    */
