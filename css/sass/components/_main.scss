@@ -1,5 +1,6 @@
 .main {
   position: relative;
+  height: 100vh;
 }
 .main-cont {
   position: relative;
@@ -14,12 +15,13 @@
   transform: translateY(-50%);
   max-width: 41%;
   text-align: start;
+  z-index: 1;
 }
 .main-title {
   font-weight: 700;
   font-size: 40px;
   line-height: 55px;
-  color: $main-color;
+  color: $white-color;
   margin-bottom: 22px;
   html[dir="ltr"] & {
     line-height: normal;
@@ -28,7 +30,7 @@
 .main-pargh {
   font-weight: 400;
   font-size: 18px;
-  color: $black-color;
+  color: $white-color;
   margin-bottom: 40px;
 }
 .btn-cont {
@@ -83,35 +85,53 @@
 }
 .main-background {
   position: absolute;
-  top: 0;
-  inset-inline-end: 0;
-  height: auto;
-  width: 55%;
-  max-width: 780px;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
   pointer-events: none;
   img {
     width: 100%;
     max-width: 100%;
-    height: auto;
+    height: 100vh;
+    object-fit: cover;
   }
-  html[dir="ltr"] & {
-    transform: scaleX(-1);
+  // html[dir="ltr"] & {
+  //   transform: scaleX(-1);
+  // }
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(33, 34, 126);
+    background: linear-gradient(
+      180deg,
+      rgba(33, 34, 126, 0.5010175945378151) 50%,
+      rgba(33, 34, 126, 0) 100%
+    );
   }
 }
-@media only screen and (min-width: 1700px) {
-  .login-ancor {
-    color: $main-color;
-  }
-  .main-background {
-    max-width: unset;
-  }
-}
+// @media only screen and (min-width: 1700px) {
+//   .login-ancor {
+//     color: $main-color;
+//   }
+// }
 /*button down*/
 .header-scroll-down-butt {
   width: 22px;
   height: 45px;
   border-radius: 11px;
-  border: 2px solid #cccccc;
+  border: 2px solid #fff;
   position: absolute;
   left: 50%;
   bottom: 40px;
@@ -134,7 +154,7 @@
     transform: translateX(-50%);
     width: 2px;
     height: 7px;
-    background-color: #cccccc;
+    background-color: #fff;
     border-radius: 1.5px;
     -webkit-animation: sdb10 2s infinite;
     animation: sdb10 2s infinite;
@@ -191,10 +211,10 @@
     font-size: 16px;
     margin-bottom: 30px;
   }
-  .main-background {
-    top: 60px;
-    width: 40%;
-  }
+  // .main-background {
+  //   top: 60px;
+  //   width: 40%;
+  // }
 }
 @include max-767 {
   .main-info {
@@ -209,9 +229,7 @@
   .btn-cont {
     justify-content: center;
   }
-  .main-background {
-    display: none;
-  }
+  
   .header-scroll-down-butt {
     // display: none;
     width: 20px;

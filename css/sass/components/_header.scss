@@ -39,6 +39,18 @@ header {
     font-weight: 400;
     text-transform: capitalize;
     transition: all 0.3s ease-in-out;
+    .home-header & {
+      color: $white-color;
+    }
+    .home-header .fixed-nav & {
+      color: $main_color;
+      &:hover {
+        color: $hover-color;
+      }
+      &.active {
+        color: $hover-color;
+      }
+    }
     &:hover {
       color: $hover-color;
     }
@@ -144,9 +156,9 @@ header {
   .hide-bg {
     display: block;
   }
-  header {
-    background-color: $white-color;
-  }
+  // header {
+  //   background-color: $white-color;
+  // }
   .nav-header {
     li {
       i {
@@ -247,10 +259,46 @@ header {
         align-items: center;
         font-weight: 400;
         font-size: 18px;
+        color: $main-color;
+        .home-header &{
+          color: $main-color;
+        }
       }
     }
   }
 }
+.logo-cont {
+  position: relative;
+}
+.second-logo {
+  display: none;
+}
+.home-header .second-logo {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.home-header .img-logo {
+  opacity: 0;
+}
+.home-header .fixed-nav .img-logo {
+  opacity: 1;
+}
+.home-header .fixed-nav .second-logo {
+  visibility: hidden;
+  opacity: 0;
+}
+.header-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 @include max-767 {
   .contact-link {
     width: 100px;

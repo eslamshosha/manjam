@@ -4,11 +4,11 @@ body {
   font-style: normal;
   font-weight: 400;
 }
-body.single-page{
+body.single-page {
   padding-top: 110px;
 }
-@include max-991{
-  body.single-page{
+@include max-991 {
+  body.single-page {
     padding-top: 55px;
   }
 }
@@ -140,8 +140,16 @@ html[dir="ltr"] .progress-bar {
   height: 2px;
   width: 100%;
   background: $main-color;
+  .home-header & {
+    background: $white-color;
+  }
+  .home-header .open-bars &{
+    background: $main-color;
+  }
+  .home-header .fixed-nav & {
+    background: $main-color;
+  }
 }
-
 .hamburger-lines .line1 {
   transform-origin: 0% 0%;
   transition: transform 0.4s ease-in-out;

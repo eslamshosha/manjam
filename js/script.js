@@ -102,33 +102,6 @@ $(document).ready(function () {
     );
   }
 
-  ///////// ** influencer-slider** /////////
-  var influencer = new Swiper(".influencer-slider .swiper-container", {
-    loop: true,
-    autoplay: true,
-    pagination: {
-      el: ".influencer-slider .swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".influencer-slider .swiper-btn-next",
-      prevEl: ".influencer-slider .swiper-btn-prev",
-    },
-    breakpoints: {
-      0: {
-        slidesPerView: 3,
-      },
-      767: {
-        slidesPerView: 3,
-      },
-      992: {
-        slidesPerView: 5,
-      },
-      1199: {
-        slidesPerView: 6,
-      },
-    },
-  });
   ///////// **blog-section** /////////
   var screen = new Swiper(".blog-section .swiper-container", {
     loop: true,
@@ -166,7 +139,8 @@ $(document).ready(function () {
       {
         scrollTop: 0,
       },
-      1500,"swing"
+      1500,
+      "swing"
     );
   });
   $(this).scrollTop() >= 500
@@ -232,6 +206,46 @@ $(document).ready(function () {
       } else {
         currLink.removeClass("active");
       }
+    });
+  }
+
+  ///////////////////
+  if (
+    $(".influencer-slider .swiper-slide").length > 5 ||
+    $(window).width() <= 991
+  ) {
+    $(".influencer-flex-parent")
+      .addClass("swiper-container")
+      .removeClass("influencer-flex-parent");
+    $(".influencer-flex")
+      .addClass("swiper-wrapper")
+      .removeClass("influencer-flex");
+    ///////// ** influencer-slider** /////////
+    var influencer = new Swiper(".influencer-slider .swiper-container", {
+      loop: true,
+      autoplay: true,
+      pagination: {
+        el: ".influencer-slider .swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".influencer-slider .swiper-btn-next",
+        prevEl: ".influencer-slider .swiper-btn-prev",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 3,
+        },
+        767: {
+          slidesPerView: 3,
+        },
+        992: {
+          slidesPerView: 5,
+        },
+        1199: {
+          slidesPerView: 6,
+        },
+      },
     });
   }
 });

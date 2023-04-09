@@ -16,3 +16,84 @@
 @import "sass/components/footer";
 @import "sass/components/blog-page";
 @import "sass/components/post";
+
+.influencer-flex-parent {
+  ~ .swiper-pagination,
+  ~ .swiper-btn {
+    display: none;
+  }
+}
+.influencer-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .swiper-slide {
+    width: auto;
+    margin: 0 15px;
+  }
+}
+
+.influencer-detail {
+  margin-top: 60px;
+}
+.influencer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  color: $main-color;
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: none !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+@media only screen and (max-width: 991px) {
+  .influencer-detail {
+    margin: 10px 0 50px;
+  }
+  .influencer-box {
+    font-size: 16px;
+  }
+}
+.custom-pagention {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.custom-pagention a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #4d4d4d;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 4px;
+  line-height: 34px;
+  background-color: #f3f3f9;
+  transition: all 0.3s ease-in-out;
+}
+.custom-pagention a:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #a748b4;
+}
+.custom-pagention a i {
+  font-size: 16px;
+}
+html[dir="ltr"] .custom-pagention a i {
+  transform: scaleX(-1);
+}
