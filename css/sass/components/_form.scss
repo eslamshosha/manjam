@@ -75,7 +75,36 @@
   justify-content: center;
   width: 100%;
 }
-
+.form-domain {
+  display: flex;
+  direction: ltr;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+.form-domain .form-input{
+  padding-right: 120px;
+}
+.input-append {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+  height: 32px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 16px;
+  color: #989898;
+  font-size: 14px;
+  font-weight: 400;
+}
 @media (max-width: 991px) {
   .form-section {
     margin-top: 50px;
