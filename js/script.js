@@ -311,6 +311,8 @@ $(document).ready(function () {
     var influencer = new Swiper(".influencer-slider .swiper-container", {
       loop: true,
       autoplay: true,
+      observer: true,
+      observeParents: true,
       pagination: {
         el: ".influencer-slider .swiper-pagination",
         clickable: true,
@@ -345,6 +347,8 @@ $(document).ready(function () {
     var screen = new Swiper(".blog-section .swiper-container", {
       loop: true,
       autoplay: true,
+      observer: true,
+      observeParents: true,
       pagination: {
         el: ".blog-slider .swiper-pagination",
         clickable: true,
@@ -388,3 +392,10 @@ if (mixExists) {
   });
 } else {
 }
+$(document).ready(function () {
+  if (location.href.match("success.html")) {
+    window.setTimeout(function () {
+      location.href = "index.html";
+    }, 5000);
+  }
+});

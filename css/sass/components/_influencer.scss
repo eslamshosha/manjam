@@ -201,7 +201,10 @@
   -ms-flex-pack: center;
   justify-content: center;
 }
-
+.blogs-flex {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 .influencer-flex .swiper-slide,
 .courses-flex .swiper-slide,
 .blogs-flex .swiper-slide {
