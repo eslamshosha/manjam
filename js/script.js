@@ -133,6 +133,30 @@ $(document).ready(function () {
       },
     },
   });
+  ////////////** footer transfer into accordion **//////////
+
+  if ($(window).width() <= 767) {
+    $(".nav-foot-header").addClass("footer-accordion");
+    $(".nav-foot").addClass("footer-panel");
+  }
+  $(".footer-accordion").click(function () {
+    var x = $(this).siblings().prop("scrollHeight") + 15 + "px";
+    $(".footer-accordion").not(this).removeClass("active");
+    $(this).toggleClass("active");
+    if ($(this).siblings().css("max-height") == "0px") {
+      $(this).siblings().css("max-height", x);
+      $(this).siblings(".nav-foot").css("padding-top", "15px");
+    } else {
+      $(this).siblings().css("max-height", "0");
+      $(this).siblings(".nav-foot").css("padding-top", "0");
+    }
+
+    $(".footer-accordion").not(this).siblings().css("max-height", "0");
+    $(".footer-accordion")
+      .not(this)
+      .siblings(".nav-foot")
+      .css("padding-top", "0");
+  });
   //////////** fixed arrow to top**//////////
   $(".arrow-top").click(function () {
     $("html,body").animate(

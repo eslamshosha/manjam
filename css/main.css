@@ -1850,6 +1850,11 @@ footer {
   background-color: #21227e;
   position: relative;
   overflow: hidden;
+  text-align: start;
+}
+
+.footer-cont {
+  margin-bottom: 75px;
 }
 
 .footer-head {
@@ -1864,90 +1869,76 @@ footer {
   font-weight: 700;
 }
 
-.footer-cont {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
-  gap: 30px;
-  margin-bottom: 60px;
-  position: relative;
-  z-index: 2;
+.footer-info .social {
+  display: none;
 }
 
-.footer-contact {
-  width: 100%;
-  overflow: hidden;
-  padding: 40px 30px;
-  text-align: start;
-  background-color: #1c1d6b;
-  border-radius: 15px;
+.nav-foot-header {
+  padding: 0;
+  margin: 0 0 25px;
+}
+
+.footer-list a {
+  text-decoration: none;
+}
+
+.foot-header {
+  text-transform: capitalize;
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}
+
+.nav-foot-li {
+  margin-bottom: 10px;
+}
+
+.nav-foot-link {
+  color: #a9aaec;
+  font-size: 15px;
+  font-weight: 400;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-foot-li .nav-foot-link:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 .contact-box {
-  margin-bottom: 35px;
-}
-
-.contact-head {
-  font-size: 16px;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 16px;
-  text-transform: capitalize;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-}
-
-.contact-head i {
-  -webkit-margin-end: 8px;
-  margin-inline-end: 8px;
-  font-size: 24px;
-}
-
-.contact-pargh {
-  font-size: 15px;
+  text-align: start;
   color: #a9aaec;
-  line-height: 26px;
-  font-weight: 400;
-  width: 95%;
-  margin-bottom: 30px;
-}
-
-.contact-ancor {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  text-decoration: none !important;
-  overflow: hidden;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   font-size: 15px;
-  color: #a9aaec;
   font-weight: 400;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-.contact-ancor:hover {
-  color: #a748b4;
+.contact-box i {
+  -webkit-margin-end: 8px;
+          margin-inline-end: 8px;
+  font-size: 24px;
+  color: #fff;
+}
+
+a.contact-box:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 .social {
-  margin-top: 10px;
+  margin-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1967,8 +1958,8 @@ a.social-link {
   height: 36px;
   width: 36px;
   border-radius: 50%;
-  -webkit-margin-end: 6px;
-          margin-inline-end: 6px;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1990,25 +1981,77 @@ a.social-link:hover {
   color: #fff;
 }
 
-.footer-form-cont {
-  width: 100%;
-  overflow: hidden;
-  background-color: #1c1d6b;
-  padding: 40px 30px;
-  border-radius: 15px;
+a.social-link:last-of-type {
+  margin: 0;
 }
 
-.footer-form {
+/*                             footer accordion                 */
+.footer-accordion.nav-foot-header {
+  margin-bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
+.footer-accordion {
+  cursor: pointer;
+  width: 100%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-panel {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+.news-letter .footer-panel {
+  padding: 0;
+}
+
+.footer-accordion:after {
+  content: "";
+  font-family: "line Awesome Free";
+  font-weight: 900;
+  font-size: 13px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+html[dir="rtl"] .footer-accordion:after {
+  content: "";
+}
+
+.footer-accordion.active:after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+html[dir="rtl"] .footer-accordion.active:after {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+/*                             footer accordion                 */
 .form-head h2 {
   text-align: start;
   font-weight: 400;
@@ -2020,15 +2063,6 @@ a.social-link:hover {
 .form-group {
   margin-bottom: 15px;
   width: 100%;
-}
-
-.input-row {
-  width: calc(50% - 5px);
-}
-
-.input-row:nth-of-type(2n + 1) {
-  -webkit-margin-end: 10px;
-          margin-inline-end: 10px;
 }
 
 .form-input {
@@ -2389,29 +2423,32 @@ select {
   margin: 0;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 767px) {
   footer {
     padding: 70px 0 40px;
     margin-top: 50px;
   }
-  .footer-head {
-    font-size: 24px;
+  footer .img-logo {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  footer .social {
+    display: none;
+  }
+  footer .footer-info {
+    margin-bottom: 35px;
+  }
+  footer .footer-info .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .footer-cont {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-  }
-  .footer-form-cont,
-  .footer-contact {
-    padding: 40px 20px;
-  }
-  .input-row {
-    width: 100%;
-  }
-  .input-row:nth-of-type(2n + 1) {
-    -webkit-margin-end: 0px;
-            margin-inline-end: 0px;
+    margin-bottom: 40px;
   }
 }
 
