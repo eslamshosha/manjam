@@ -19,6 +19,9 @@
 @import "sass/components/blog-page";
 @import "sass/components/post";
 
+html {
+  scroll-behavior: smooth;
+}
 .influencer-flex-parent {
   ~ .swiper-pagination,
   ~ .swiper-btn {

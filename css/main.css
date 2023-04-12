@@ -3246,6 +3246,10 @@ textarea.main-form-input {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .influencer-flex-parent ~ .swiper-pagination,
 .influencer-flex-parent ~ .swiper-btn {
   display: none;
