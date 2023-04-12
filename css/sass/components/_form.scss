@@ -51,10 +51,12 @@
   caret-color: $main-color;
 }
 .form-input[type="email"],
-.form-input[type="tel"] {
+.form-input[type="tel"],
+.form-input[type="number"] {
   text-align: left;
 }
 .form-input[type="email"]::placeholder,
+.form-input[type="number"]::placeholder,
 .form-input[type="tel"]::placeholder {
   text-align: start;
 }
@@ -83,7 +85,7 @@
   max-width: 100%;
   position: relative;
 }
-.form-domain .form-input{
+.form-domain .form-input {
   padding-right: 120px;
 }
 .input-append {

@@ -1810,26 +1810,31 @@ html[dir="ltr"] .second-btn {
 }
 
 .form-input[type="email"],
-.form-input[type="tel"] {
+.form-input[type="tel"],
+.form-input[type="number"] {
   text-align: left;
 }
 
 .form-input[type="email"]::-webkit-input-placeholder,
+.form-input[type="number"]::-webkit-input-placeholder,
 .form-input[type="tel"]::-webkit-input-placeholder {
   text-align: start;
 }
 
 .form-input[type="email"]:-ms-input-placeholder,
+.form-input[type="number"]:-ms-input-placeholder,
 .form-input[type="tel"]:-ms-input-placeholder {
   text-align: start;
 }
 
 .form-input[type="email"]::-ms-input-placeholder,
+.form-input[type="number"]::-ms-input-placeholder,
 .form-input[type="tel"]::-ms-input-placeholder {
   text-align: start;
 }
 
 .form-input[type="email"]::placeholder,
+.form-input[type="number"]::placeholder,
 .form-input[type="tel"]::placeholder {
   text-align: start;
 }
