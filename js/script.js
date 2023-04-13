@@ -313,6 +313,7 @@ $(document).ready(function () {
       autoplay: true,
       observer: true,
       observeParents: true,
+      spaceBetween: 15,
       pagination: {
         el: ".influencer-slider .swiper-pagination",
         clickable: true,

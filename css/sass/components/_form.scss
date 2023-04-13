@@ -51,12 +51,10 @@
   caret-color: $main-color;
 }
 .form-input[type="email"],
-.form-input[type="tel"],
-.form-input[type="number"] {
+.form-input[type="tel"] {
   text-align: left;
 }
 .form-input[type="email"]::placeholder,
-.form-input[type="number"]::placeholder,
 .form-input[type="tel"]::placeholder {
   text-align: start;
 }
