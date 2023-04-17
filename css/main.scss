@@ -102,3 +102,177 @@ html {
 html[dir="ltr"] .custom-pagention a i {
   transform: scaleX(-1);
 }
+
+.terms {
+  font-weight: 500;
+  font-size: 16px;
+  display: block;
+  color: $main-color;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.terms a {
+  display: inline-block;
+  color: $main-color;
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+}
+.terms a:hover {
+  color: $main-color;
+}
+/***************************pop-up*************************/
+
+.terms-modal .modal-dialog {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+}
+
+@media (max-width: 480px) {
+  .terms-modal .modal-dialog {
+    width: calc(100vw - 40px);
+  }
+}
+
+.terms-modal .modal-content {
+  padding: 50px 45px 36px;
+}
+
+.modal-content {
+  border-radius: 0;
+  background-color: #fff;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  position: relative;
+}
+
+.modal-header {
+  padding: 0;
+  border: none;
+  position: static;
+  margin: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.modal-header .close {
+  position: absolute;
+  top: 15px;
+  inset-inline-end: 15px;
+  padding: 0;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  width: auto;
+  height: auto;
+  opacity: 1;
+  outline: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-header .close:hover,
+.modal-header .close:focus {
+  color: $hover-color;
+}
+
+.modal-title {
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 20px;
+  color: $main-color;
+  text-align: center;
+  margin-bottom: 3vh;
+}
+
+.modal-body {
+  padding: 0;
+  margin: 0;
+}
+.modal-body p {
+  color: #666666;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: justify;
+  text-align-last: center;
+}
+@media (max-width: 480px) {
+  .terms-modal .modal-content {
+    padding: 40px 25px 30px;
+  }
+}
+.check-label {
+  text-align: start;
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  color: $main-color;
+  padding-inline-start: 35px;
+  transition: all 0.3s ease-in-out;
+}
+.check-group input[type="checkbox"],
+.check-group input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.check-group .checkmark {
+  border: 2px solid transparent;
+  border-radius: 0;
+  background-color: #f1f1f1;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.check-group .custom-checkmark {
+  border-radius: 3px;
+}
+.check-group input[type="checkbox"] ~ .checkmark {
+  border-radius: 3px;
+}
+.check-group:hover input ~ .checkmark {
+  background-color: #f1f1f1;
+  transition: all 0.3s ease-in-out;
+}
+.check-group input:checked ~ .checkmark {
+  background-color: $main-color;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  visibility: visible;
+}
+.check-group input:checked ~ .checkmark:after {
+  opacity: 1;
+  visibility: visible;
+}
+.check-group .checkmark:after {
+  content: "\f00c";
+  font-family: "line Awesome Free";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+  color: $white-color;
+}
+/***************************pop-up*************************/
